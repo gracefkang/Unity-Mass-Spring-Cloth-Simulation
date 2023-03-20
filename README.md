@@ -11,12 +11,12 @@ Timing parameters are located in Cloth.cs
 Spring parameters are located in Spring.cs
 Mass parameters are located in Mass.cs
 
-- Script is located on gameobjects default and default2 in the Cloth component
+- Script is located on gameobjects sparseCloth and denseCloth in the Cloth component
 - Integrator can be chosen in editor
 - press play button to see simulation
 
 Notes:
-- Did not implement bending springs because I couldn't figure out how to access the i+1th vertex of each direction in Unity's Mesh data :(
+- Did not implement bending springs because I couldn't figure out how to access the i+2th vertex of each direction in Unity's Mesh data :(
 
 Observations/thoughts:
 - increasing the stiffness decreased the stretchiness of the cloth.

@@ -25,8 +25,8 @@ public class Cloth : MonoBehaviour
     public List<Mass> masses = new List<Mass>();
     List<Spring> springs = new List<Spring>();
 
-    float timestep;
-    float speed;
+    float timestep = 0.001f;
+    float speed = 0.01f;
 
     private void Awake()
     {
@@ -35,27 +35,6 @@ public class Cloth : MonoBehaviour
         mesh = GetComponent<MeshFilter>().mesh;
         vertices = mesh.vertices;
         triangles = mesh.triangles;
-
-        //set integration parameters
-        switch (integrator)
-        {
-            case IntegrationType.EulerExplicit:
-                timestep = 0.001f;
-                speed = 0.01f;
-                break;
-            case IntegrationType.VerletExplicit:
-                timestep = 0.001f;
-                speed = 0.01f;
-                break;
-            case IntegrationType.Symplectic:
-                timestep = 0.001f;
-                speed = 0.01f;
-                break;
-            default:
-                timestep = 0.001f;
-                speed = 0.01f;
-                break;
-        }
 
         //initialize masses
         foreach (Vector3 vert in vertices)
