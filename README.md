@@ -1,6 +1,6 @@
 # Unity Mass-Spring Cloth Simulation
 
-###Option 1. Spring-Mass Cloth simulation
+### Option 1. Spring-Mass Cloth simulation
 Uploaded on github here: https://github.com/gracefkang/Unity-Mass-Spring-Cloth-Simulation
 
 Desc:
@@ -23,7 +23,7 @@ Observations/thoughts:
 - increasing damping lowered the amount of time it took for the sim to come to rest. could be described as the "bounciness" of the cloth.
 - the cloth tends to fall in on itself. could be due to lack of bendings springs or lack of handling self-collisions.
 
-###Option 3. Experiment with different integrators
+### Option 3. Experiment with different integrators
 
 See:
 - IntegrateEulerExplicit
