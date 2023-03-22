@@ -147,12 +147,12 @@ public class Cloth : MonoBehaviour
 
                 if (detectCollisions)
                 {
-                    if (Vector3.Distance(masses[j].position, obstacle.transform.position) < 2.5f)
+                    if (Vector3.Distance(masses[j].position, obstacle.transform.position) < 2.1f)
                     {
                         Vector3 sphereLine = Vector3.Normalize(masses[j].position - obstacle.transform.position);
-                        while (Vector3.Distance(masses[j].position, obstacle.transform.position) < 2.5f)
+                        while (Vector3.Distance(masses[j].position, obstacle.transform.position) < 2.1f)
                         {
-                            masses[j].position += 0.1f * sphereLine;
+                            masses[j].position += 0.01f * sphereLine;
                         }
                     }
                 }
